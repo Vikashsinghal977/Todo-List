@@ -1,17 +1,23 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Task from './Task'
 
 function Home() {
+    const [task, setTask] = useState([]);
+
+    const ChangeHendle = (event) => {
+        event.preventDefault();
+    }
+
   return (
-    <div class="todo-container">
-        <div class="todo-header">
+    <div className="todo-container">
+        <div className="todo-header">
             <h1>My To-Do List</h1>
         </div>
-        <div class="input-container">
-            <form action="">
+        <div className="input-container">
+            <form onClick={ChangeHendle}>
 
-            <input type="text" class="todo-input" placeholder="Add a new task..." />
-            <button class="add-btn" type='submit'>Add</button>
+            <input type="text" className="todo-input" placeholder="Add a new task..." />
+            <button className="add-btn" type='submit'>Add</button>
             </form>
         </div>
 

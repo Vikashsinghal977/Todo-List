@@ -3,10 +3,10 @@ import React from 'react'
 const Task = ({title}) => {
   return (
     <div>
-      <ul class="todo-list">
+      <ul className="todo-list">
             <li>
                 {title}
-                <button class="delete-btn">Delete</button>
+                <button className="delete-btn">Delete</button>
             </li>
            
         </ul>
