@@ -1,14 +1,14 @@
 import React from 'react'
 
-const Task = ({title}) => {
+const Task = ({point}) => {
   return (
     <div>
-      <ul className="todo-list">
+      <ul class="todo-list">
             <li>
-                {title}
-                <button className="delete-btn">Delete</button>
+                {point}
+                <button class="delete-btn">Delete</button>
             </li>
-           
+            
         </ul>
     </div>
   )
