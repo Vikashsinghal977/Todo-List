@@ -5,6 +5,7 @@ function Home() {
 
   return (
     <div className='container'>
+      <h1>Daily Goals</h1>
         <form action="">
             <input type="text" placeholder='Enter Title'/>
             <textarea placeholder='Enter Discription'></textarea>

@@ -3,6 +3,7 @@ import React from 'react'
 const Task = ({point}) => {
   return (
     <div>
+      
       <ul class="todo-list">
             <li>
                 {point}

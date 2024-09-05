@@ -6,7 +6,7 @@
 nav {
   background-color: rgb(44, 30, 242);
   color: white;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
 }
 
@@ -27,6 +27,11 @@ nav {
 
  }
 
+ .container > h1 {
+  text-align: center;
+  margin: 10px;
+ }
+
 input, textarea, button {
   padding: 10px;
   border: 1px solid rgba(0, 0, 0, 0.214);
@@ -38,5 +43,4 @@ button{
   cursor: pointer;
   background-color: rgb(24, 24, 24);
   color: white;
-
 }
