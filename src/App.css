@@ -36,11 +36,44 @@ input, textarea, button {
   padding: 10px;
   border: 1px solid rgba(0, 0, 0, 0.214);
   border-radius: 5px;
-  margin: 10px;
+  margin: 10px 0px;
 }
 button{
   border: none;
   cursor: pointer;
   background-color: rgb(24, 24, 24);
   color: white;
+}
+
+/* Task */
+
+
+.task{
+  display: flex;
+  background-color: white;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 20px 0;
+}
+
+.task > div{
+  width: 100%;
+}
+.task button{
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  font-size: 1.6rem;
+  background-color: crimson;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.task button:hover{
+  background-color: red;
+}
+.task span{
+  color: rgba(6, 5, 5, 0.648);
 }

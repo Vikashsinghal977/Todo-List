@@ -1,16 +1,21 @@
 import React from 'react'
 
-const Task = ({point}) => {
+const Task = ({title, description, deleteTask, index}) => {
+  
   return (
-    <div>
+
+    <div  className="task" >
+
+      <div>
+
+        <p>{title}</p>
+        
+        <span>{description}</span>
+        
+      </div>
       
-      <ul class="todo-list">
-            <li>
-                {point}
-                <button class="delete-btn">Delete</button>
-            </li>
-            
-        </ul>
+      <button onClick={()=>deleteTask(index)}>-</button>
+
     </div>
   )
 }
