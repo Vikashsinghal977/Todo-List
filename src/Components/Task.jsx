@@ -1,23 +1,15 @@
-import React from 'react'
-
-const Task = ({title, description, deleteTask, index}) => {
-  
+export default function Task({ title, description, deleteTask, index }) {
   return (
+    <div className="task-card">
+      <h3>{title}</h3>
+      <p>{description}</p>
 
-    <div  className="task" >
-
-      <div>
-
-        <p>{title}</p>
-        
-        <span>{description}</span>
-        
-      </div>
-      
-      <button onClick={()=>deleteTask(index)}>-</button>
-
+      <button
+        className="delete-btn"
+        onClick={() => deleteTask(index)}
+      >
+        Delete
+      </button>
     </div>
-  )
+  );
 }
-
-export default Task

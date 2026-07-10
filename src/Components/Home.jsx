@@ -38,12 +38,46 @@ function Home() {
   },[task])
 
   return (
-    <div className='container'>
+    // <div className='container'>
 
-      <h1> Daily Goals </h1>
+    //   <h1> Daily Goals </h1>
 
-        <form action="" onSubmit={handleSubmit}>
+    //     <form action="" onSubmit={handleSubmit}>
 
+    //         <input 
+    //           type="text" 
+    //           placeholder='Enter Title' 
+    //           value={title} 
+    //           onChange={ (e) => setTitle(e.target.value) }/>
+
+    //         <textarea 
+    //           placeholder='Enter Discription' 
+    //           value={description} 
+    //           onChange={ (e) => setDescription(e.target.value) }>
+
+    //          </textarea>
+
+    //         <button type='submit'>Add</button>
+
+    //     </form>
+
+    //     {task.map((item,index)=>(
+    //       <Task 
+    //       key={index} 
+    //       title={item.title} 
+    //       description={item.description}
+    //       deleteTask={deleteTask} 
+    //       index={index}/>
+
+    //     ))}
+
+    // </div>
+
+<div className="app">
+  <div className="container">
+    <h1 className="heading">🎯 Daily Goals</h1>
+
+    <form className="form" onSubmit={handleSubmit}>
             <input 
               type="text" 
               placeholder='Enter Title' 
@@ -58,20 +92,25 @@ function Home() {
              </textarea>
 
             <button type='submit'>Add</button>
+    </form>
 
-        </form>
-
-        {task.map((item,index)=>(
-          <Task 
-          key={index} 
-          title={item.title} 
-          description={item.description}
-          deleteTask={deleteTask} 
-          index={index}/>
-
-        ))}
-
+    <div className="tasks">
+      {task.length > 0 ? (
+        task.map((item, index) => (
+          <Task
+            key={index}
+            title={item.title}
+            description={item.description}
+            deleteTask={deleteTask}
+            index={index}
+          />
+        ))
+      ) : (
+        <div className="empty">No Goals Added Yet 🚀</div>
+      )}
     </div>
+  </div>
+</div>
   )
 }
 
